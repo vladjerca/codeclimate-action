@@ -5,10 +5,16 @@ branding:
   icon: 'code'
   color: 'gray-dark'
 inputs:
+  executable:
+    required: false
+    description: 'choose the executable you want to use for reporting'
+    default: './cc-reporter'
   coverageCommand:
+    required: false
     description: 'Coverage command to execute'
     default: 'yarn coverage'
   debug:
+    required: false
     description: 'Enable debugging logs for the Code Climate test reporter'
     default: 'false'
 runs:
